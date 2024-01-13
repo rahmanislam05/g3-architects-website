@@ -70,3 +70,22 @@ nav li a {
     margin-top: 30px;
     width: 100%;
 }
+
+/* responsive mobile device styles */
+@media screen and (max-width:576px) {
+    header{
+        padding: 20px;
+    }
+    nav{
+        flex-direction: column;
+    }
+}
+/* responsive medium or tablet device*/
+@media screen and (min-width:577px) and (max-width:992px) {
+    header{
+        padding: 40px;
+    }
+    nav{
+        flex-direction: column;
+    }
+}
