@@ -14,6 +14,14 @@
     padding: 20px 25px;
     cursor: pointer;
 }
+.section-title{
+    color: #131313;
+    font-weight: 700;
+    font-size: 2rem;
+}
+.description {
+    color: #727272;
+}
 /* header section */
 header {
     background: rgba(255, 144, 14, 0.10);
@@ -26,11 +34,12 @@ nav {
     align-items: center;
 }
 
-.nav-title {
+/*  shered style deoya hoice
+    .nav-title {
     color: #131313;
     font-weight: 700;
     font-size: 2rem;
-}
+} */
 
 nav ul {
     display: flex;
@@ -61,11 +70,12 @@ nav li a {
     color: #131313;
 }
 
-.banner-description {
+/*  shered style deoya hoice
+    .banner-description {
     color: #727272;
     text-align: center;
     margin-bottom: 20px;
-}
+} */
 .banner img{
     margin-top: 30px;
     width: 100%;
@@ -121,7 +131,10 @@ main{
     }
     .teams-container-img{
         grid-template-columns: repeat(1,1fr)
-}
+    }
+    .teams-content{
+        padding: 0 20px;
+    }
 }
 /* responsive medium or tablet device*/
 @media screen and (min-width:577px) and (max-width:992px) {
