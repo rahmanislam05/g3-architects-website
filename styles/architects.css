@@ -133,7 +133,7 @@ main{
         grid-template-columns: repeat(1,1fr)
     }
     .teams-content{
-        padding: 0 20px;
+        padding: 0;
     }
 }
 /* responsive medium or tablet device*/
@@ -144,6 +144,9 @@ main{
     nav,
     .teams-container{
         flex-direction: column;
+    }
+    .teams-content{
+        padding: 0;
     }
         
 }
