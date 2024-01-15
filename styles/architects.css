@@ -1,10 +1,12 @@
 /* work sans font style form google */
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700&display=swap');
+
 /* shered style */
 * {
     font-family: 'Work Sans', sans-serif;
 }
-.btn-primary{
+
+.btn-primary {
     color: #FFFFFF;
     background-color: #FF900E;
     font-size: 1.20rem;
@@ -14,14 +16,17 @@
     padding: 20px 25px;
     cursor: pointer;
 }
-.section-title{
+
+.section-title {
     color: #131313;
     font-weight: 700;
     font-size: 2rem;
 }
+
 .description {
     color: #727272;
 }
+
 /* header section */
 header {
     background: rgba(255, 144, 14, 0.10);
@@ -70,88 +75,145 @@ nav li a {
     color: #131313;
 }
 
-/*  shered style deoya hoice
-    .banner-description {
-    color: #727272;
-    text-align: center;
-    margin-bottom: 20px;
-} */
-.banner img{
+.banner img {
     margin-top: 30px;
     width: 100%;
 }
 
 /* main section */
-main{
+main {
     max-width: 80%;
     margin: 50px auto 0;
 }
+
 /* teams sections start */
-.teams-container{
+.teams-container {
     display: flex;
     align-items: center;
 }
-.teams-container-img{
+
+.teams-container-img {
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
 }
-.teams-content{
+
+.teams-content {
     padding: 0 40px;
 }
+
 /* teams er modde h3 start */
-.quick-list{
+.quick-list {
     color: #727272;
     font-size: 45px;
     font-weight: 500;
 }
-.of-our{
+
+.of-our {
     color: #131313;
     font-size: 45px;
     font-weight: 500;
 }
-.features{
+
+.features {
     color: #FF900E;
     font-size: 45px;
     font-weight: 500;
 }
-/* teams er modde h3 end */
-.teams-description{
-    color:#727272;
+
+/* features section start */
+.features-container {
+    display: flex;
+    margin: 80px 0;
+    gap: 60px;
+}
+
+.features-text {
+    width: 50%;
+}
+
+.features-text .features-title {
+    border-left: 3px solid #FF900E;
+    padding-left: 10px;
+
+}
+
+.features-text .card {
+    padding: 20px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    background: #FFF;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+}
+
+.features-img {
+    width: 50%;
+}
+
+.features-img img {
+    width: 100%;
+    margin-left: 30px;
+    height: 100%;
+    object-fit: cover;
+}
+
+.year-batch {
+    border-radius: 8px;
+    background: #FF900E;
+    width: 150px;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 50px;
+}
+.year-batch h2{
+    font-size: 2rem;
+    margin: 0;
+}
+.year-batch p{
+    font-size: 1rem;
+    margin: 0;
 }
 /* facts section start */
-.facts-card-container{
+.facts-card-container {
     display: flex;
     justify-content: space-around;
 }
-.facts-card-container .card{
+
+.facts-card-container .card {
     border-radius: 8px;
     border: 1px solid salmon;
     text-align: center;
     padding: 30px;
     margin-top: 50px;
 }
-.facts-card-container .card-status{
+
+.facts-card-container .card-status {
     color: #424242;
     font-size: 2.2rem;
     margin: 0;
 }
-.card .card-title{
+
+.card .card-title {
     font-weight: 600;
     font-size: 1.25rem;
     margin: 0;
 }
+
 /* sponspors section start */
-.sponspors{
+.sponspors {
     text-align: center;
 }
-.sponspors-img{
+
+.sponspors-img {
     margin-top: 50px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
 }
-.sponspors img{
+
+.sponspors img {
     width: 100px;
 }
 
@@ -160,42 +222,52 @@ main{
 /*responsive media queries */
 /*mobile device */
 @media screen and (max-width:576px) {
-    header{
+    header {
         padding: 20px;
     }
-    nav,.teams-container,
+
+    nav,
+    .teams-container,
     .facts-card-container,
-    .sponspors-img
-    {
+    .sponspors-img {
         flex-direction: column;
     }
-    .teams-container-img{
-        grid-template-columns: repeat(1,1fr)
+
+    .teams-container-img {
+        grid-template-columns: repeat(1, 1fr)
     }
-    .teams-content{
+
+    .teams-content {
         padding: 0;
     }
-    .sponspors-img{
+
+    .sponspors-img {
         gap: 20px;
     }
 }
+
 /*medium or tablet device*/
 @media screen and (min-width:577px) and (max-width:992px) {
-    header{
+    header {
         padding: 40px;
     }
+
     nav,
-    .teams-container,.sponspors-img{
+    .teams-container,
+    .sponspors-img {
         flex-direction: column;
     }
-    .teams-content{
+
+    .teams-content {
         padding: 0;
     }
-    .facts-card-container{
+
+    .facts-card-container {
         flex-wrap: wrap;
     }
-    .sponspors-img{
+
+    .sponspors-img {
         gap: 30px;
     }
-        
+
 }
